@@ -10,7 +10,7 @@
 		urlArgs: '_'+ Math.random() // evitar o cache dos arquivos carregados
 	});
 
-	require(['require','text', 'jquery', 'underscore' ], function(require){
+	require(['require','text', 'jquery', 'underscore'], function(require){
 			var dependencies = [	
 								'js/app/application'
 							];

@@ -1,8 +1,16 @@
-require(['text!views/test/test.html'], function(html){
+require(['text!views/login/index.html'], function(html){
 	
-	var test_html = _.template(html);
-	for(var i=0; i <= 1000; i++){
-		$('#list').append(test_html({title:'opa-' + i}))
-	}
+	var credentials = {
+		username: 'admin',
+		password: 'mudar123'
+	};
+
+	$('body').html(_.template(html)(credentials));
+
+	$('#btn_sign_in').click(function(event){
+		console.log(credentials);
+	});
 });
+
+
 
